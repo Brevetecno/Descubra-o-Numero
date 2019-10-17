@@ -6,7 +6,11 @@
 
 import random
 
-while True:
+loop1 = True
+loop2 = True
+
+while loop1:
+    loop2 = True
     print('-' * 50)
     print('{:^6}'.format('DESCUBRA O NÚMERO'))
     print('-' * 50)
@@ -15,4 +19,19 @@ while True:
 
     print(num)
 
-    input()
+
+    while loop2:
+        print('-' * 50)
+        print('(1) - Continuar')
+        print('(2) - Sair')
+        resposta = int(input('Resposta: '))
+
+        if (resposta == 1):
+            loop1 = True
+            loop2 = False
+        elif (resposta == 2):
+            exit()
+        else:
+            print('-' * 50)
+            print('Digite 1 ou 2')
+            loop2 = True
