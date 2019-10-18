@@ -15,9 +15,15 @@ while loop1:
     print('{:^6}'.format('DESCUBRA O NÚMERO'))
     print('-' * 50)
 
-    num = random.randint(1, 10)
+    n1 = int(input('Menor número: '))
+    n2 = int(input('Maior número: '))
+    print('O número será gerado entre {} a {}.'.format(n1, n2))
 
-    print(num)
+    input('Aperte ENTER para gerar um número aleatório')
+
+    print('-' * 50)
+    num = random.randint(n1, n2)
+    print('O número gerado foi: ', num)
 
 
     while loop2:
@@ -35,3 +41,4 @@ while loop1:
             print('-' * 50)
             print('Digite 1 ou 2')
             loop2 = True
+
