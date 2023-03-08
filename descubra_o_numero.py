@@ -2,9 +2,11 @@
 # Python 3
 # 2019
 
-# Descubra o número
+# Passa tempo - Descubra o número
 
+# Bibliotecas
 import random
+
 
 loop1 = True
 loop2 = True
@@ -19,7 +21,7 @@ while loop1:
     n2 = int(input('Maior número: '))
     print('O número será gerado entre {} a {}.'.format(n1, n2))
 
-    input('Aperte ENTER para gerar um número aleatório')
+    input('Aperte ENTER para gerar o número aleatório')
 
     print('-' * 50)
     num = random.randint(n1, n2)
@@ -39,6 +41,6 @@ while loop1:
             exit()
         else:
             print('-' * 50)
-            print('Digite 1 ou 2')
+            print('Digite o número (1) para CONTINUAR ou (2) para SAIR')
             loop2 = True
 
